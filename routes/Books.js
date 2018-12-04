@@ -29,4 +29,15 @@ books.post('/library', (req, res) => {
     .catch(err => {res.send('error: ' + err)})
 });
 
+//DELETE Book
+books.delete('/library/:id', (req, res) => {
+  Book.destroy({
+    where: {
+      book_id: req.params.id
+    }
+  })
+  .then(res.send('Record deleted successfully'))
+  .catch(err => {res.send('error: ' + err )});
+});
+
 module.exports = books;
