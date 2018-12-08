@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 const db = {}
-const sequelize = new Sequelize('heroku_69b3916c17a669d', 'b8910a0a760e1a', '86ed563d', {
+const sequelize = new Sequelize('******', '********', '*******', {
   host: 'eu-cdbr-west-02.cleardb.net',
   dialect: 'mysql',
   operatorsAliases: false,
