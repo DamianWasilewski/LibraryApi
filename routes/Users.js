@@ -18,7 +18,10 @@ users.get('/', (req, res) => {
 users.post('/register', (req, res) => {
   const userData = {
     user_name: req.body.user_name,
-    password: req.body.password
+    password: req.body.password,
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    email: req.body.email
   }
 
   User.findOne({
